@@ -5,9 +5,7 @@
   (display-line-numbers-mode)
   (setq display-line-numbers 'relative)
   (js2r-add-keybindings-with-prefix "C-c C-m")
-  (company-mode)
-  (tern-mode)
-  (add-to-list 'company-backends 'company-tern))
+  (company-mode))
 
 (use-package company-tern
   :ensure t)
