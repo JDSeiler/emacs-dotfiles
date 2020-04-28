@@ -1,17 +1,17 @@
 ;; rust.el
 ;; Purupose: Configuration for rust source files
 
-(defun rust-settings ()
-  (use-package rust-mode
-    :ensure t)
-  (use-package eglot
-    :ensure t)
-  (eglot)
-  (company-mode)
-  (display-line-numbers-mode)
-)
-;; TODO: These hooks don't work for some reason? Not sure why
-(add-hook 'rust-mode-hook 'rust-settings)
-(add-hook 'rust-mode-hook 'eglot-ensure)
+(setq lsp-keymap-prefix "s-l")
+(setq lsp-rust-server 'rust-analyzer)
+(use-package lsp-ui
+  :ensure t
+  :commands lsp-ui-mode)
+(use-package lsp-mode
+  :ensure t
+  :hook (
+	 (rust-mode . lsp)
+	 (lsp-mode . lsp-enable-which-key-integration))
+  :commands (lsp lsp-rust-switch-servers))
 
+(company-mode)
 
