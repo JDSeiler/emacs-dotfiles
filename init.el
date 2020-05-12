@@ -22,7 +22,7 @@
  '(org-agenda-files (quote ("~/Documents/School/S20/todo.org")))
  '(package-selected-packages
    (quote
-    (lsp-ui projectile ## eglot rust-mode evil htmlize company-mode webkit-color-picker use-package))))
+    (olivetti lsp-ui projectile ## eglot rust-mode evil htmlize company-mode webkit-color-picker use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

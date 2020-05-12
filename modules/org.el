@@ -29,5 +29,14 @@
 
 (add-hook 'org-mode-hook 'org-settings)
 
+;; Optional function to trigger "writing mode" - some extra settings
+;; for writing prose in org.
+(defun prose-on ()
+  (interactive)
+  (olivetti-mode))
 
+;; Optional function for reverting "writing mode" settings.
+(defun prose-off ()
+  (interactive)
+  (olivetti-mode 0))
 
