@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: flashcard-root-template
+# key: root
+# --
+{
+    "metadata": {
+    "name": "$1",
+    "date": "$2",
+    "author": "$3",
+    "shuffle": "${4:false}"
+  },
+  "questions": [
+    
+  ]
+}

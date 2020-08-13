@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: tf-question
+# key: tf
+# --
+{
+  "type": "true-false",
+  "question": "$1",
+  "answer": $2
+},

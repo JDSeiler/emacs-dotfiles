@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: mul-choice-question
+# key: mul
+# --
+{
+  "type": "multiple-choice",
+  "question": "$1",
+  "choices": [
+    "$3"
+  ],
+  "answer": $2
+},

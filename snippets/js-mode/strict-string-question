@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: strict-string-question
+# key: strict
+# --
+{
+  "type": "strict-string",
+  "question": "$1",
+  "answer": "$2"
+},
+$3
